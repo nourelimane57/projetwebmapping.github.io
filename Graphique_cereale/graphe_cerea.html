@@ -1,0 +1,167 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Géoportail Agriculture</title>
+    <link rel="icon" type="image/jpg" href="../logo11.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Année', 'Blé dur', 'Blé tendre'],
+          ['2015', 3.26, 2.67],
+          ['2016', 2.89, 2.36],
+          ['2017', 2.8, 2.22],
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Evolution des prix moyens payés aux producteurs agricoles de la culture',
+           subtitle:' des blé dur et blé tendre en Dhs/Kg: 2017-2019'
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="#"><em>Agri</em>MAP</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="../index.html">Home</a></li>
+          
+          <li class="has-submenu"><a href="#section2">Time slider</a>
+            <ul class="sub-menu">
+              <li><a href="../cereal2.html" rel="sponsored" class="external">Production des Céréales</a></li>
+              <li><a href="../legumes2.html" rel="sponsored" class="external">Production des Légumineuses</a></li>
+            </ul>
+          </li>
+  
+          <li class="has-submenu"><a href="#section2">Céréales</a>
+            <ul class="sub-menu">
+              <li><a href="../cartes symbole/bledur2.html" rel="sponsored" class="external">Production du Blé Dur</a></li>
+              <li><a href="../cartes symbole/bletendre2.html" rel="sponsored" class="external">Production du Blé Tendre</a></li>
+            </ul>
+          </li>
+  
+          <li class="has-submenu"><a href="#section2">légumineuses</a>
+            <ul class="sub-menu">
+              
+              <li><a href="../cartes symbole/feve2.html" rel="sponsored" class="external">Production des Fèves </a></li>
+              <li><a href="../cartes symbole/lentille2.html" rel="sponsored" class="external">Production des Lentilles</a></li>
+              
+            </ul>
+          </li>
+          
+          <li class="has-submenu"><a href="#section2">Graphiques</a>
+            <ul class="sub-menu">
+              <li><a href="../Graphique_cereale/graphe_cerea.html" rel="sponsored" class="external">Evolution des prix des Céréales</a></li>
+              <li><a href="../graphique_legumineuse/graphe_legume.html" rel="sponsored" class="external">Evolution des prix des Légumineuses</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#section5">Video</a></li> -->
+          <li class="has-submenu"><a href="#section2">Requêtes</a>
+            <ul class="sub-menu">
+              <li><a href="../query_esri_final/requetesdirection.html" rel="sponsored" class="external">Directions d'agriculture</a></li>
+              <li><a href="../query_esri_final/requetesproduction.html" rel="sponsored" class="external">Production agricole</a></li>
+              <li><a href="../demo-postgis-nodejs-main/public/index.html" rel="sponsored" class="external">Liaison Postgis</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu"><a href="#section2">Autres</a>
+            <ul class="sub-menu">
+    
+              <li><a href="../3Dmap/index.html" rel="sponsored" class="external">Carte 3D</a></li>
+              <li><a href="../ratser_manip/raster2.html" rel="sponsored" class="external">Raster</a></li>
+        </ul>
+          
+          
+          
+        </ul>
+      </nav>
+    </header>
+    </body>
+  </html>
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Evolution des prix du blé dur et blé tendre</h2>
+          </div>
+        </div>
+        <div class="col-md-6">  
+    
+    
+    
+    
+    
+    
+    <body>
+    <center><div id="columnchart_material" style="width: 800px; height: 600px;"></div></center>
+
+
+
+     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
+
+
+
+        </div>
+            
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          
+       
+
+  
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        
+    </script>
+</body>
+</html>
+  </body>
+</html>

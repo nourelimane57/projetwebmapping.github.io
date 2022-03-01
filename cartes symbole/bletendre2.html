@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Géoportail Agriculture</title>
+    <link rel="icon" type="image/jpg" href="../logo11.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Agri</em>MAP</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="../index.html">Home</a></li>
+        
+        <li class="has-submenu"><a href="#section2">Time slider</a>
+          <ul class="sub-menu">
+            <li><a href="../cereal2.html" rel="sponsored" class="external">Production des Céréales</a></li>
+            <li><a href="../legumes2.html" rel="sponsored" class="external">Production des Légumineuses</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu"><a href="#section2">Céréales</a>
+          <ul class="sub-menu">
+            <li><a href="../cartes symbole/bledur2.html" rel="sponsored" class="external">Production du Blé Dur</a></li>
+            <li><a href="../cartes symbole/bletendre2.html" rel="sponsored" class="external">Production du Blé Tendre</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu"><a href="#section2">légumineuses</a>
+          <ul class="sub-menu">
+            
+            <li><a href="../cartes symbole/feve2.html" rel="sponsored" class="external">Production des Fèves </a></li>
+            <li><a href="../cartes symbole/lentille2.html" rel="sponsored" class="external">Production des Lentilles</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="has-submenu"><a href="#section2">Graphiques</a>
+          <ul class="sub-menu">
+            <li><a href="../Graphique_cereale/graphe_cerea.html" rel="sponsored" class="external">Evolution des prix des Céréales</a></li>
+            <li><a href="../graphique_legumineuse/graphe_legume.html" rel="sponsored" class="external">Evolution des prix des Légumineuses</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li class="has-submenu"><a href="#section2">Requêtes</a>
+          <ul class="sub-menu">
+            <li><a href="../query_esri_final/requetesdirection.html" rel="sponsored" class="external">Directions d'agriculture</a></li>
+            <li><a href="../query_esri_final/requetesproduction.html rel="sponsored" class="external">Production agricole</a></li>
+            <li><a href="../demo-postgis-nodejs-main/public/index.html" rel="sponsored" class="external">Liaison Postgis</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#section2">Autres</a>
+          <ul class="sub-menu">
+  
+            <li><a href="../3Dmap/index.html" rel="sponsored" class="external">Carte 3D</a></li>
+            <li><a href="../ratser_manip/raster2.html" rel="sponsored" class="external">Raster</a></li>
+      </ul>
+        
+        
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+
+  <!-- ***** Main Banner Area End ***** -->
+
+</body>
+
+</html>
+         
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Production du blé tendre au Maroc en 2019</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <!DOCTYPE html>
+
+	
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="../assets1/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	<link rel="stylesheet" href="../css1/leaflet.css" />
+	<script src="../assets1/js/leaflet.js"></script>
+	<script src="../assets1/js/jquery-3.6.0.js"></script>
+    <script src="../assets1/js/leaflet-timeline-slider.js"></script>
+
+
+    <style type="text/css">
+     html,
+    body {
+      margin: 0px;
+      padding: 1;
+      height: 100%;
+    }
+
+    #map {
+      width: 900px;
+      height: 600px;
+      margin: 10px auto
+    }
+        .legend, .temporal-legend {
+              padding: 6px 8px;
+              font: 14px/16px Arial, Helvetica, sans-serif;
+              background: white;
+              background: rgba(255,255,255,0.8);
+              box-shadow: 0 0 15px rgba(0,0,0,0.2);
+              border-radius: 10px;
+                }
+    #legendTitle {
+              text-align: center;
+              margin-bottom: 12px;
+              font-family: 'Open Sans', sans-serif;
+              opacity: 1;
+              text-transform: none;
+              letter-spacing: normal;
+              color: black;
+              font-weight: bold;
+              font-size: 20px;
+
+              }
+    .symbolsContainer {   float: left;
+                  margin-left: 60px;
+                    }
+    .legendCircle {
+            border-radius:60%; 
+            border: 1.5px solid #99046c; 
+            background: #a7037680;
+            display: inline-block;
+                                            }
+    .legendValue {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            position: absolute;
+            right: 20px;}
+      </style>
+    
+</head>
+
+<body>
+
+ 
+
+
+        <div id="map"></div>
+        <script type="text/javascript" src="regions.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var map = L.map('map', {
+              center: [29, -5],
+              zoom: 5
+            });
+      
+            L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+              attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
+              maxZoom: 11,
+              minZoom: 4
+            }).addTo(map);
+      
+            function Monstyle(feature) {
+              return {
+                weight: 2,
+                opacity: 1,
+                color: '#5a5e5f',
+                dashArray: '3',
+                fillOpacity: 0.8,
+                fillColor: '#b3bcbe'
+              };
+            }
+      
+            var geojson = L.geoJson(regions, {
+              style: Monstyle
+            }).addTo(map);
+      
+            //Upload Geojson File
+      
+            $.getJSON("https://raw.githubusercontent.com/nourelimane57/nour/main/bletendre.geojson")
+              .done(function (data) {
+                var info = processData(data);
+                createPropSymbols(info.timestamps, data);
+                createLegend(info.min, info.max);
+                createSliderUI(info.timestamps);
+      
+              });
+      
+            // Process Data
+            function processData(data) {
+      
+              var timestamps = [];
+              var min = Infinity;
+              var max = -Infinity;
+      
+      
+              for (var feature in data.features) {
+                var properties = data.features[feature].properties;
+      
+      
+                for (var attribute in properties) {
+                  if (attribute != 'FID_' &&
+                    attribute != 'Id' &&
+                    attribute != 'Nom' &&
+                    attribute != 'Lat' &&
+                    attribute != 'Lon') {
+                    if ($.inArray(attribute, timestamps) === -1) {
+      
+      
+                      timestamps.push(attribute);
+                    }
+                    if (properties[attribute] < min) {
+                      min = properties[attribute];
+                    }
+                    if (properties[attribute] > max) {
+                      max = properties[attribute];
+                    }
+                  }
+                }
+              }
+              return {
+                timestamps: timestamps,
+                min: min,
+                max: max
+              }
+            }
+      
+            // Create Propotional Symbols
+            function createPropSymbols(timestamps, data) {
+      
+              regions = L.geoJson(data, {
+      
+      
+                pointToLayer: function (feature, latlng) {
+                  return L.circleMarker(latlng, { // we use circle marker for the points
+                    fillColor: "#a7037680",  // fill color of the circles
+                    color: '#a7037680',      // border color of the circles
+                    weight: 3,             // circle line weight in pixels
+                    fillOpacity: 0.5       // fill opacity (0-1)
+                  }).on({
+                    mouseover: function (e) {
+                      this.openPopup();
+                      this.setStyle({ fillColor: 'black' });  // fill color turns black when mouseover
+                    },
+                    mouseout: function (e) {
+                      this.closePopup();
+                      this.setStyle({ fillColor: '#a7037680' });  // fill turns original color when mouseout
+                    }
+                  });
+                }
+              }).addTo(map);
+      
+              updatePropSymbols(timestamps[0]);
+            }
+      
+            // Update Propotional Symbols
+            function updatePropSymbols(timestamp) {
+      
+              regions.eachLayer(function (layer) {
+      
+                var props = layer.feature.properties;
+                var radius = calcPropRadius(props[timestamp]);
+      
+      
+                var popupContent = '<b> Région : <b>' + props.Nom + '</b> <br />production de Blé tendre : ' + String(props[timestamp]);
+      
+                layer.setRadius(radius);
+                layer.bindPopup(popupContent, { offset: new L.Point(0, -radius), autoPan: false });
+              });
+            }
+      
+      
+            function calcPropRadius(attributeValue) {
+      
+              var scaleFactor = 0.19;
+              var area = attributeValue * scaleFactor;
+      
+              return Math.sqrt(area / Math.PI);
+            }
+      
+      
+            function createLegend(min, max) {
+              if (min < 1000) {
+                min = 1000;
+              }
+              if (max > 8000) {
+                max = 8000;
+              }
+              function roundNumber(inNumber) {
+                return (Math.round(inNumber / 10) * 10);
+              }
+              var legend = L.control({ position: 'bottomright' });
+              legend.onAdd = function (map) {
+      
+                var legendContainer = L.DomUtil.create("div", "legend");
+                var symbolsContainer = L.DomUtil.create("div", "symbolsContainer");
+                var classes = [roundNumber(min), roundNumber((max - min) / 2), roundNumber(max)];
+                var legendCircle;
+                var lastRadius = 0;
+                var currentRadius;
+                var margin;
+                L.DomEvent.disableClickPropagation(legendContainer);;
+                $(legendContainer).append("<h3 id='legendTitle'>production de Blé tendre Par Région</h3>");
+      
+                for (var i = 0; i <= classes.length - 1; i++) {
+      
+                  legendCircle = L.DomUtil.create("div", "legendCircle");
+                  currentRadius = calcPropRadius(classes[i]);
+                  margin = -currentRadius - lastRadius - 2;
+                  $(legendCircle).attr("style", "width: " + currentRadius * 2 +
+                    "px; height: " + currentRadius * 2 +
+                    "px; margin-left: " + margin + "px");
+                  $(legendCircle).append("<span       class='legendValue'>" + classes[i] + '   ' + 'milliers de quintaux' + "</span>");
+                  $(symbolsContainer).append(legendCircle);
+                  lastRadius = currentRadius;
+                }
+                $(legendContainer).append(symbolsContainer);
+                return legendContainer;
+              };
+              legend.addTo(map);
+            } // end createLegend() 
+      
+      
+      
+      
+      
+            // Create a Legend for the Slider
+      
+            function createTimeLabel(startTimestamp) {
+              var temporalLegend = L.control({ position: 'bottomleft' });
+              temporalLegend.onAdd = function (map) {
+                var output = L.DomUtil.create("output", "temporal-legend");
+                $(output).text(startTimestamp);
+                return output;
+              }
+              temporalLegend.addTo(map);
+            }
+      
+      
+      
+      
+          });
+
+
+        </script>
+    </body>
+    
+    </html>
+
+
+
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
+
+
+
+        </div>
+            
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          
+       
+
+  
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        
+    </script>
+</body>
+</html>

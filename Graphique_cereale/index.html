@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Année', 'Blé dur', 'Blé tendre'],
+          ['2015', 3.26, 2.67],
+          ['2016', 2.89, 2.36],
+          ['2017', 2.8, 2.22],
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Evolution des prix moyens payés aux producteurs agricoles de la culture',
+           subtitle:' des blé dur et blé tendre en Dhs/Kg: 2017-2019'
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <center><div id="columnchart_material" style="width: 800px; height: 600px;"></div></center>
+  </body>
+</html>
