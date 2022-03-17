@@ -476,10 +476,7 @@ https://templatemo.com/tm-557-grad-school
 
   
 
-        var baseLayers = {
-            'Grayscale': grayscale,
-            'Streets': streets
-        };
+        
         var myStyle = {
             "color": "#0570b0",
             "weight": 1,
@@ -503,7 +500,7 @@ https://templatemo.com/tm-557-grad-school
 
         };
 
-        var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+        var layerControl = L.control.layers(overlays).addTo(map);
       
         var geojson = L.geoJSON(coucheregion, {
             style: myStyle2,
