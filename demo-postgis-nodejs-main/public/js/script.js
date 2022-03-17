@@ -14,7 +14,7 @@ var map = L.map("map").setView([30.4937, -6.283], 6);
 // }).addTo(map);
 
 // add Positron basemap
-const urlPositron = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+const urlPositron = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png";
 function addBM() {
   L.tileLayer(urlPositron, {
     attribution:
