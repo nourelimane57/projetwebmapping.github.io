@@ -230,7 +230,7 @@
         
 
         var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
-        var mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+        var mbUrl = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
 
         var grayscale = L.tileLayer(mbUrl, { id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr });
         var streets = L.tileLayer(mbUrl, { id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr });
@@ -262,12 +262,6 @@
        
         var geo3 = L.imageOverlay('legende.PNG', [[22.569151764077525, 1.065025915067307],[25.037863352150712, 4.391420541217273],[22.569151764077525, 4.391420541217273],[25.037863352150712, 1.065025915067307]]).addTo(map);
 
-        var baseLayers = {
-            'Grayscale': grayscale,
-            'Streets': streets
-        };
-     
-      
         
         
         var overlays = {
@@ -280,7 +274,7 @@
 
         };
 
-        var layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+        var layerControl = L.control.layers(overlays).addTo(map);
       
        
         
